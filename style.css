@@ -17,16 +17,33 @@
 
     }
 
-    .xy{
-        display:grid;
-        grid-template-rows: 1;
-        grid-template-columns: auto auto auto auto auto auto auto auto auto;
+    .y {
+        border: 1px solid black;
+        margin-top: 5%;
+
+    
+        }
+    .y input{
+        margin-top: 1px;
+        margin: 3px;
     }
 
-    @media (width<25%) {
-        .xy{
-            display:grid;
-            grid-template-rows: auto;
-            grid-template-columns: 1;
-        }
+    .r {
+        border: 1px solid black;
+        margin-top: 5%;
+    }
+
+    .r button {
+        margin: 3px;
+    }
+
+    @media (max-width: 850px) { 
+        .xy{ 
+            grid-template-columns: repeat(2, auto); 
+        } 
+    }  
+    @media (max-width: 750px) { 
+        .xy{ 
+            grid-template-columns: repeat(1, auto); 
+        } 
     }
